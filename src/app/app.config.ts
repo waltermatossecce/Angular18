@@ -28,7 +28,8 @@ export const appConfig: ApplicationConfig = {
 
     /*AQUI ES EL HTTPCLIENT provideHttpClient*/
     /*withFetch => podemos modificar el comportamiento es una funcion cache la peticiones get aparte eso sea eficiente*/
-    provideHttpClient(withFetch(),withInterceptors([SpinnerInterceptor])), 
+    provideHttpClient(withFetch(),
+    withInterceptors([SpinnerInterceptor])), 
     provideAnimations(),
     provideToastr({
       positionClass: 'toast-bottom-right',
